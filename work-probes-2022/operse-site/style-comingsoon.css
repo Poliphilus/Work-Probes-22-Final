@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;;
+    overflow: hidden;
+}
+
+.bgimg {
+    background-image: url('images/comingsoon-images/opersebackground.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topleft {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: 20%;
+}
+
+.middle {
+    position: relative;
+    margin: 0 auto;
+    top: 30%;
+    text-align: center;
+}
+
+.middle h6 {
+    margin-top: -30px;
+}
+
+.middle a {
+    color: #634f00;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.middle  #counter {
+    font-size: x-large;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 1.5rem;
+    border: 0.2rem solid black;
+    margin-top: 1.5rem;
+    background-color: #ffcc00;
+    position: relative;
+    margin: 0 auto;
+    top: 30%;
+    text-align: center;
+}
+
+#progressBarFull {
+    height: 1.3rem;
+    background-color: black;
+    width: 0;
+}
+
+.middle h5 {
+    font-size: x-small;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    text-align: center;
+}
+
+.footer h5 {
+    text-align: center;
+    background-color: #ffcc00;
+    margin: 0;
+    padding: 0;
+    font-size: x-small;
+}
