@@ -1,0 +1,504 @@
+/* Color palette
+#BACKGROUND : #FEE2CA
+#MAIN FONT COLOR :  #B84A3D
+#HEADER FONT COLOR :   #491c17
+*/
+
+/* FONTS
+font-family: 'Titillium Web', sans-serif; - text on website will use this font!
+font-family: 'Staatliches', cursive; - used for headers/nav bar */
+body {
+    background-color: #FEE2CA;
+    font-family: 'Titillium Web', sans-serif;
+    color: #491c17;
+    margin-top: -6px;
+}
+
+/* nav bar CSS START */
+@media screen and (max-width: 470px) {
+  div.navBar li {
+    padding: 5px;
+  }
+}
+
+#myHeader {
+  background-color: #FEE2CA;
+  background: #FEE2CA;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navBar-logo {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navBar-logo:hover {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-20deg); }
+  20% { transform: translate(-3px, 0px) rotate(20deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(20deg); }
+  50% { transform: translate(-1px, 2px) rotate(-20deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-20deg); }
+  80% { transform: translate(-1px, -1px) rotate(20deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-20deg); }
+}
+
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  font-family: 'Staatliches', cursive;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color:  #491c17;
+  font-size: large;
+}
+
+@media screen and (max-width: 440px) {
+  .navBar a {
+    font-size: 14px;
+  }
+}
+
+a:hover {
+  color: #B84A3D;
+}
+
+/* nav bar CSS END */
+/* nav bar text start */
+
+.navheader {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+/* slide show CSS START */
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:  #B84A3D;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #491c17;
+}
+
+.text {
+  display: none;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  display: none;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  display: none;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #B84A3D;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #491c17;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+/* SLIDE SHOW END CSS */
+
+
+/* GRID IMAGE START HERE */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* HALF page background image start */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.backgroundhalf {
+  background-image: url("images/home-images/halfbackground.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* HALF page background image end */
+
+.headerroast {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* google maps text */
+
+.googlemaptext {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* search bar CSS */
+
+input[type=searchbar] {
+  width: 160px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=searchbar]:focus {
+  width: 100%;
+}
+
+#searchbarFooter {
+  text-align: center;
+  background-color: #ffcda0;
+}
+
+/* footer css */
+.footer {
+  background-color: #ffcda0;
+}
+
+.copyrighttext h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color:#491c17;
+  font-size: x-small;
+  text-align: center;
+}
+
+.contactinfotext h1{
+  color: #491c17;
+  text-align: center;
+  font-size: small;
+}
+
+.contactinfotext h1 a{
+  color:#491c17;
+  text-align: center;
+  font-size: small;
+}
+
+.socialmediaicons {
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.socialmediaicons a {
+  color:  #491c17;
+  padding: 10px;
+}
+
+/* about us css  start */
+
+.aboutcontainerBG {
+  background-image: url("images/about-images/aboutimagebackground.jpg");
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus-text h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.aboutus-text h4 {
+  margin-top: -30px;
+  text-align: center;
+  padding: 40px;
+  text-transform: uppercase;
+}
+
+.aboutus-text p {
+  margin-top: -20px;
+  text-align: center;
+}
+
+/* media for black box in image  start */
+@media screen and (max-width: 1340px) {
+  div.text-block-about {
+    font-size: xx-small;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  div.text-block-about {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.text-block-about {
+    font-size: 3px;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  div.text-block-about {
+    font-size: 0px;
+  }
+}
+/* media for black box in image end*/
+
+/* CSS for contact us */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #491c17;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ad8e73;
+}
+
+.container {
+  width: 100%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#columnContactText {
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#columnContact {
+  width: 100%;
+  padding: auto;
+  margin: auto;
+}
+
+#contactContainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 645px) {
+  #columnContact {
+    margin-right: -20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #columnContact {
+    margin: auto;
+    padding: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* SHOP CARDS CSS */
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #ad8e73;
+}
+
+.price {
+  color: white;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #491c17;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 1;
+  color: black
+}
+
+#shopCard p {
+  font-size: medium;
+}
